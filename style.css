@@ -1,0 +1,85 @@
+/* Basics
+----------------------------------------------------------------------------------*/
+html, body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 300;
+    hyphens: auto;
+    display:grid;
+    background-color: #ebebeb;
+}
+
+p{
+    margin-bottom: 3rem;
+    max-width: 50rem;
+}
+
+section{
+    margin-bottom: 2rem;
+    border-bottom: solid 1px #3b3b3b;
+}
+
+div{
+    margin-bottom: 20px;
+}
+
+/* Headlines
+----------------------------------------------------------------------------------*/
+h1{
+    font-size: 3rem;
+    line-height: 100%;
+    margin-bottom: 4rem;
+}
+  
+h2{
+    font-size: 2.5rem;
+    line-height: 100%;
+    margin-bottom: 0.8rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.6rem;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+/* Main
+----------------------------------------------------------------------------------*/
+main{
+    max-width: 47rem;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 26px;
+    background: #ebebeb;
+    box-shadow:  11px 11px 20px #dddddd,
+             -11px -11px 20px #f9f9f9;
+}
+
+/* Navigation
+----------------------------------------------------------------------------------*/
+.left-nav{
+    position: fixed;
+    background-color: cadetblue;
+    margin: 1rem;
+    width: 6rem;
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 26px;
+    background: #ebebeb;
+    box-shadow:  11px 11px 20px #dddddd,
+             -11px -11px 20px #f9f9f9;
+}
+
+  .left-nav ul li a {
+    color: #3b3b3b;
+    font-weight: 500;
+  }
