@@ -20,7 +20,7 @@ button {
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: rgb(82, 80, 80);
+    color: #00a3d7;
     border: none;
     border-radius: 15px;
     background: #ebebeb;
@@ -29,11 +29,11 @@ button {
   }
   .button_neum:hover{
     background-color: #f0ecec;
-    color: black;
+    color: #00a1d7d7;
   }
 
 .button_neum:active {
-    color:black;
+    color:#0579a0;
   background-color: #ebebeb;
   box-shadow:  inset 11px 11px 20px #c8c8c8,
   inset -11px -11px 20px #ffffff;
@@ -50,17 +50,17 @@ button {
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: rgb(82, 80, 80);
+    color: #00a3d7;
     border-radius: 50px;
     background: #ebebeb;
     box-shadow:  4px 4px 8px #c8c8c8,
              -4px -4px 8px #ffffff;
   }
   .button_rund:hover {background-color: #ebebeb;
-    color: black;}
+    color: #00a1d7d7;}
 
 .button_rund:active {
-    color: rgb(82, 80, 80);
+    color: #0579a0;;
   background-color: #ebebeb;
   box-shadow:  inset 4px 4px 8px #c8c8c8,
   inset -4px -4px 8px #ffffff;
@@ -68,14 +68,14 @@ button {
 }
 
 /*Switch---------------------------------------------------------------*/
-[type="checkbox"] {
+.switch_button {
     position: relative;
     left: 30px;
     top: 0px;
     z-index: 0;
     -webkit-appearance: none;
   }
-  [type="checkbox"] + label {
+  .switch_button + label {
     position: relative;
     display: block;
     cursor: pointer;
@@ -86,7 +86,7 @@ button {
     position: relative;
     margin-top: -30px;
   }
-  [type="checkbox"] + label:before {
+  .switch_button + label:before {
     width: 60px;
     height: 30px;
     border-radius: 30px;
@@ -101,7 +101,7 @@ button {
     box-shadow: inset 6px 6px 12px #c8c8c8,
     inset -6px -6px 12px #ffffff;
   }
-  [type="checkbox"] + label:after {
+  .switch_button + label:after {
     width: 30px;
     height: 30px;
     border-radius: 30px;
@@ -114,7 +114,7 @@ button {
     top: 2px;
     z-index: 10;
   }
-  [type="checkbox"]:checked + label:before {
+  .switch_button:checked + label:before {
     background-color: #00a3d7;
     box-shadow: inset 6px 6px 12px #008bb7,
     inset -6px -6px 12px #00bbf7;
@@ -124,7 +124,7 @@ button {
   }
 
 /*Radiobutton---------------------------------------------------------------*/
-.button_radio{
+.radio_button{
     height: 15px;
     width: 15px;
     border-radius: 50px;
