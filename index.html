@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neumorphismus</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/gui_elemente.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/gui_elemente.csss">
+    <link rel="stylesheet" href="frameworks/gui_elemente.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="left-nav">
         <ul>
-          <li><a>Geschichte</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#neumorphism">Einleitung</a></li>
+          <li><a href="#installation">Installation</a></li>
           <li><a href="#gui-elements">GUI Elemente</a></li>
-          <li><a>Card</a></li>
-          <li><a>Button</a></li>
-          <li><a>Radiobutton</a></li>
-          <li><a>Searchlist</a></li>
-          <li><a>Textfield</a></li>
-          <li><a>Textarea</a></li>
+          <li><a href="#button">Button</a></li>
+          <li><a href="#circlebutton">Round Button</a></li>
+          <li><a href="#switchbutton">Switch Button</a></li>
+          <li><a href="#radiobutton">Radio Button</a></li>
+          <li><a href="#checkbox">Checkbox</a></li>
+          <li><a href="#card">Card</a></li>
+          <li><a href="#searchbar">Search bar</a></li>
+          <li><a>Image</a></li>
+          <li><a>Formular</a></li>
+          <li><a>Carousell</a></li>
         </ul>
       </nav>
       <main>
-        <h1>Ein CSS-Framework für GUI Elemente im neumorphischen Design</h1>
+        <h1 id="home">Ein CSS-Framework für GUI Elemente im neumorphischen Design</h1>
     <div class="content">
         <section>
-            <h3>Neumorphismus</h2>
+            <h3 id="neumorphism">Neumorphismus</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi. Sed consectetur dignissim dignissim. Donec pretium est sit amet ipsum fringilla feugiat. Aliquam erat volutpat. Maecenas scelerisque, orci sit amet cursus tincidunt, libero nisl eleifend tortor, vitae cursus risus mauris vitae nisi. Cras laoreet ultrices ligula eget tempus. Aenean metus purus, iaculis ut imperdiet eget, sodales et massa. Duis pellentesque nisl vel massa dapibus non lacinia velit volutpat. Maecenas accumsan interdum sodales. In hac habitasse platea dictumst. Pellentesque ornare blandit orci, eget tristique risus convallis ut. Vivamus a sapien neque. Morbi malesuada massa ac sapien luctus vulputate.
             </p>
-            <h4>Installation</h4>
+            <h4 id="installation">Installation</h4>
             <div class="code">
                 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/neumorphism.css"&gt;
             </div>
@@ -38,22 +45,22 @@
             </p>
         </section>
         <section>
-            <h3 id="gui-elements">GUI Elemente</h2>
-            <h4>Button</h3>
+            <h3 id="gui-elements">GUI Elemente</h3>
+            <h4 id="button">Button</h4>
             <div>
                 <button class="button_neum">Drück mich</button>
                 <div class="code">
                     &lt;button class="button_neum">Drück mich&lt;/button>
                 </div>
             </div>
-            <h4>Circle-Button</h3>
+            <h4 id="circlebutton">Round Button</h4>
             <div>
                 <button class="button_rund">On</button>
                 <div class="code">
                     &lt;button class="button_rund">On&lt;/button>
                 </div>
             </div>
-            <h4>Switch Button</h3>
+            <h4 id="switchbutton">Switch Button</h4>
             <div>
                 <input id="switch" type="checkbox" class="switch_button"><label for="switch">On</label>
                 <div class="code">
@@ -61,6 +68,83 @@
         &lt;label for="switch">On&lt;/label>&lt;
                 </div>
             </div>
+            <h4 id="radiobutton">Radio Button</h4>
+                <div>
+                    <div class="radiobutton">
+                            <input type="radio" id="contactChoice1"
+                             name="contact" value="email" checked>
+                            <label for="contactChoice1">Email</label>
+                            <input type="radio" id="contactChoice2"
+                             name="contact" value="phone">
+                            <label for="contactChoice2">Phone</label>
+                            <input type="radio" id="contactChoice3"
+                             name="contact" value="mail">
+                            <label for="contactChoice3">Mail</label>
+                       </div>
+                        <div class="code">
+                            &lt;div class="radiobutton"> <br>
+                            &lt;input type="radio" id="contactChoice1"
+                            name="contact" value="email" checked> <br>
+                            &lt;label for="contactChoice1">Email&lt;/label> <br>
+                            &lt;input type="radio" id="contactChoice2"
+                            name="contact" value="phone"> <br>
+                            &lt;label for="contactChoice2">Phone&lt;/label> <br>
+                            &lt;input type="radio" id="contactChoice3"
+                            name="contact" value="mail"> <br>
+                            &lt;label for="contactChoice3">Mail&lt;/label> <br>
+                           &lt;/div> 
+                        </div>
+                </div>
+                <h4 id="checkbox">Checkbox</h4>
+                    <div>
+                        <div>
+                            <input class="checkbox" id="check" type="checkbox"><label for="check">Label</label>
+                        </div>
+                        <div class="code">
+                            &lt;input class="checkbox" id="check" type="checkbox">&lt;label for="check">Label&lt;/label>
+                        </div>
+                    </div>
+            <h4 id="card">Card</h4>
+                <div>
+                    <div class="card">
+                        <img src="images/avatar.jpg" alt="card_img">
+                        <p>Bastian Mucha</p>
+                        <a>UI/UX Designer</a>
+                        <div class="flexbox">
+                            <button class="button_rund">✆</button>  
+                            <button class="button_rund">✉</button>
+                            <button class="button_rund">✍</button>
+                            <button class="button_rund">✎</button>
+                        </div>
+                    </div>
+                    <div class="code">
+            &lt;div class="card"> <br>
+            &lt;img src="images/avatar.jpg" alt="card_img">  <br>
+            &lt;p>Bastian Mucha&lt;/p>  <br>
+            &lt;a>UI/UX Designer&lt;/a>  <br>
+            &lt;div class="flexbox">  <br>
+            &lt;button class="button_rund">☏&lt;/button><br>
+            &lt;button class="button_rund">✉&lt;/button><br>
+            &lt;button class="button_rund">✍&lt;/button><br>
+            &lt;button class="button_rund">✎&lt;/button><br>
+            &lt;/div> <br>
+            &lt;/div>
+                    </div>
+                </div>
+                <h4 id="searchbar">Search bar</h4>
+                    <div>
+                    <div class="flexbox">
+                        <input id="searchfield" type="text" class="searchfield" placeholder="Search..">
+                        <button class="button_rund">🔍</button> 
+                    </div>
+                    <div class="code">
+                        &lt;div class="flexbox"><br>  
+                        &lt;input id="searchfield" type="text" class="searchfield" placeholder="Search.."> <br>
+                        &lt;button class="button_rund">🔍&lt;/button><br>
+                        &lt;/div>
+                    </div>
+                        </div>
+
         </section>  
     </div>
 
