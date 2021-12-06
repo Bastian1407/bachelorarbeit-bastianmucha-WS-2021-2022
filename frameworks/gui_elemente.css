@@ -98,8 +98,8 @@ button {
     position: absolute;
     left: 0px;
     border: none;
-    box-shadow: inset 6px 6px 12px #c8c8c8,
-    inset -6px -6px 12px #ffffff;
+    box-shadow: inset 3px 6px 12px #c8c8c8,
+    inset -3px -6px 12px #ffffff;
   }
   .switch_button + label:after {
     width: 30px;
@@ -116,19 +116,178 @@ button {
   }
   .switch_button:checked + label:before {
     background-color: #00a3d7;
-    box-shadow: inset 6px 6px 12px #008bb7,
-    inset -6px -6px 12px #00bbf7;
+    box-shadow: inset 3px 3px 12px #008bb7,
+    inset -3px -3px 12px #00bbf7;
   }
-  [type="checkbox"]:checked + label:after {
+  .switch_button:checked + label:after {
     margin: 0 0 0 30px;
   }
 
 /*Radiobutton---------------------------------------------------------------*/
-.radio_button{
-    height: 15px;
-    width: 15px;
-    border-radius: 50px;
-    background: #ebebeb;
-    box-shadow: inset 2px 2px 4px #c8c8c8,
-                inset -2px -2px 4px #ffffff;
+.radiobutton{
+  display: flex;
+  flex-direction:column;
+}
+
+.radiobutton input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: #ebebeb;
+  box-shadow:  2px 2px 4px #c8c8c8,
+               -2px -2px 4px #ffffff;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+
+.radiobutton input:checked {
+  border: none;
+  background: #ebebeb;
+  box-shadow:  inset 2px 2px 4px #c8c8c8,
+               inset -2px -2px 4px #ffffff;
+}
+
+.radiobutton label {
+  margin-top: -1rem;
+    padding-left:35px; 
+}
+
+/*Checkbox---------------------------------------------------------------*/
+
+.checkbox + label {
+  position: absolute;
+}
+.checkbox {
+  position: relative;
+  left: 15px;
+  top: -4px;
+  z-index: 0;
+  -webkit-appearance: none;
+}
+.checkbox + label::before {
+  width: 22px;
+  height: 18px;
+  border: none;
+  border-radius: 4px;
+  background: #ebebeb;
+  box-shadow:  inset 2px 2px 4px #c8c8c8,
+               inset -2px -2px 4px #ffffff;
+  display: block;
+  content: "";
+  float: left;
+  margin-right: 15px;
+  z-index: 5;
+  position: relative;
+}
+.checkbox:checked+label::before {
+  content: "✔️";
+  font-size: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  padding-bottom:1px;
+  text-shadow: 0.4px 0.8px 1px #000000,
+  -0.4px -0.8px 1px #c7c7c7;;
+}
+
+/*Card---------------------------------------------------------------*/
+.card{
+  margin-left: 2rem;;
+  width: 220px;
+  height: 350px;
+  border: none;
+border-radius: 15px;
+background: #ebebeb;
+box-shadow:  22px 35px 52px #c8c8c8,
+         -33px -35px 52px #ffffff;
+}
+
+.card img{
+  padding-left:35px;
+  padding-right:35px;
+  padding-top: 20px;
+  width: 150px;
+  height: auto;
+}
+
+.card p{
+  margin: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+    margin-bottom: 0rem;
+}
+
+.card a{
+  font-size: 18px;
+  padding-left: 60px;
+  font-size: 15px;
+  font-weight: 200;
+  color:black;
+}
+
+.card button{
+  margin:auto;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #00a3d7;
+  border-radius: 50px;
+  background: #ebebeb;
+  box-shadow:  4px 4px 8px #c8c8c8,
+           -4px -4px 8px #ffffff;
+}
+.card button:hover {background-color: #ebebeb;
+  color: #00a1d7d7;}
+
+.card button:active {
+  color: #0579a0;;
+background-color: #ebebeb;
+box-shadow:  inset 4px 4px 8px #c8c8c8,
+inset -4px -4px 8px #ffffff;
+transform: translateY(4px);
+}
+
+.flexbox{
+  margin: 1em;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+/*Search bar---------------------------------------------------------------*/
+.searchfield{
+  width: 200px;
+  height: 40px;
+  border-radius: 40px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 19px;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+  outline: none;
+  color: rgb(105, 105, 105);
+  border: none;
+  background: #ebebeb;
+  box-shadow:  inset 6px 8px 12px #c8c8c8,
+           inset -6px -8px 12px #ffffff;
+}
+
+.flexbox button{
+  margin-left: 5px;
+  font-size: 15px;
+  padding: 1px;
 }
