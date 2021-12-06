@@ -23,9 +23,8 @@
           <li><a href="#checkbox">Checkbox</a></li>
           <li><a href="#card">Card</a></li>
           <li><a href="#searchbar">Search bar</a></li>
-          <li><a>Image</a></li>
+          <li><a href="#carousel">Carousel</a></li>
           <li><a>Formular</a></li>
-          <li><a>Carousell</a></li>
         </ul>
       </nav>
       <main>
@@ -144,12 +143,56 @@
                         &lt;/div>
                     </div>
                         </div>
-
+                        <h4 id="carousel">Carousel</h4>
+                        <div>
+                            <div class="carousel"> 
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="/images/carousel_1.JPG" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="/images/carousel_2.JPG" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="/images/carousel_3.JPG" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+                            </div>
+                            <div class="code">
+                                &lt;div class="slideshow-container"><br>
+                                &lt;div class="mySlides fade"><br>
+                                &lt;img src="/images/carousel_1.JPG" style="width:100%">
+                                &lt;/div><br>
+                                &lt;div class="mySlides fade"><br>
+                                &lt;img src="/images/carousel_2.JPG" style="width:100%">
+                                &lt;/div><br>
+                                &lt;div class="mySlides fade"><br>
+                                &lt;img src="/images/carousel_5.JPG" style="width:100%">
+                                &lt;/div><br>
+                                &lt;a class="prev" onclick="plusSlides(-1)">&#10094;&lt;/a> <br>
+                                &lt;a class="next" onclick="plusSlides(1)">&#10095;&lt;/a> <br>
+                                &lt;/div> <br>
+                                  &lt;div style="text-align:center"> <br>
+                                  &lt;span class="dot" onclick="currentSlide(1)">&lt;/span> <br>
+                                  &lt;span class="dot" onclick="currentSlide(2)">&lt;/span> <br>
+                                  &lt;span class="dot" onclick="currentSlide(3)">&lt;/span> <br>
+                                  &lt;/div>
+                            </div>
+                        </div>
         </section>  
     </div>
 
     <p>by Bastian Mucha</p>
 
 </main>
+<script src="frameworks/animation.js"></script>
 </body>
 </html>
