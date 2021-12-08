@@ -24,7 +24,10 @@
           <li><a href="#card">Card</a></li>
           <li><a href="#searchbar">Search bar</a></li>
           <li><a href="#carousel">Carousel</a></li>
-          <li><a>Formular</a></li>
+          <li><a href="#progressbar">Progress bar</a></li>
+          <li><a href="#formular">Textfield</a></li>
+          <li><a href="#knopf">Knopf</a></li>
+          <li><a href="#klingel">Klingel</a></li>
         </ul>
       </nav>
       <main>
@@ -38,6 +41,9 @@
             <h4 id="installation">Installation</h4>
             <div class="code">
                 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/neumorphism.css"&gt;
+            </div>
+            <div class="code">
+                &lt;script src="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/animation.js">&lt;/script>
             </div>
             <p>Das Github Repository ist unter folgendem Link zu finden: <a
                 href="https://github.com/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022">https://github.com/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022</a>
@@ -187,12 +193,67 @@
                                   &lt;/div>
                             </div>
                         </div>
+                        <h4 id="progressbar">Progress bar</h4>
+                        <div>
+                            <div>
+                                <progress min="0" max="100" value="63">
+                              </div>                              
+                                <div class="code">
+                                    &lt;progress min="0" max="100" value="63">&lt;/progress>
+                                </div>
+                        </div>
+
+                        <h4 id="formular">Textfield</h4>
+                        <div>
+                        <div class="formular">
+                                    <p>Formular</p>
+                                        <input type="text" id="vname" class="textfield" placeholder="Vorname" required><br><br>
+                                        <input type="text" id="name" class="textfield" placeholder="Nachname" required><br><br>
+                                        <input type="email" id="email" class="textfield" placeholder="Email" required><br><br>
+                                        <textarea id="textarea" class="textarea" placeholder="Deine Nachricht.." required></textarea><br><br>
+                                        <button class="button_neum">Abschicken</button>
+                        </div>
+                        <div class="code">
+                            &lt;div class="formular"><br>
+                            &lt;p>Formular&lt;/p><br>
+                            &lt;input type="text" id="vname" class="textfield" placeholder="Vorname" required><br>
+                            &lt;input type="text" id="name" class="textfield" placeholder="Nachname" required><br>
+                            &lt;input type="email" id="email" class="textfield" placeholder="Email" required><br>
+                            &lt;textarea id="textarea" class="textarea" placeholder="Deine Nachricht.." required>&lt;/textarea><br>
+                            &lt;button class="button_neum">Abschicken&lt;/button>
+                    </div>
+                        </div>
+                        <h4 id="knopf">Knopf</h4>
+                        <div>
+                        <div class="knopf">
+                            <div class="ein">
+                            </div>
+                        </div>
+                        <div class="code">
+                            &lt;div class="knopf">
+                            &lt;div class="ein">
+                            &lt;/div>
+                            </div>
+                        </div>
+                        <h4 id="klingel">Klingel</h4>
+                        <div>
+                        <div class="klingel">
+                            <div class="klingelEin">
+                            </div>
+                        </div>
+                        <div class="code">
+                            &lt;div class="klingel">
+                            &lt;div class="klingelEin">
+                            &lt;/div>
+                            </div>
+                        </div>
+                    </div>
         </section>  
     </div>
 
     <p>by Bastian Mucha</p>
 
 </main>
-<script src="frameworks/animation.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/animation.js"></script>
 </body>
 </html>
