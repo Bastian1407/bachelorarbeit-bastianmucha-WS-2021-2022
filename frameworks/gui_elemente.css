@@ -391,3 +391,173 @@ box-shadow:  22px 35px 52px #c8c8c8,
     from {opacity: .4} 
     to {opacity: 1}
   }
+
+/*Progress bar---------------------------------------------------------------*/
+progress {
+  border: none;
+  width: 200px;
+  height: 20px;
+  border-radius: 40px;
+  border: none;
+  background: #ebebeb;
+  box-shadow:  inset 6px 8px 12px #c8c8c8,
+  inset -6px -8px 12px #ffffff;
+}
+
+progress::-webkit-progress-value {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-color: #00a3d7;
+  box-shadow: inset 6px 6px 12px #008bb7,
+    inset -6px -6px 12px #00bbf7;
+}
+
+progress::-moz-progress-bar {
+  border-radius: 40px;
+  border: none;
+  background: #ebebeb;
+  box-shadow:  inset 6px 8px 12px #c8c8c8,
+  inset -6px -8px 12px #ffffff;
+}
+
+progress::-webkit-progress-value {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-color: #00a3d7;
+  box-shadow: inset 6px 6px 12px #008bb7,
+    inset -6px -6px 12px #00bbf7;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 40px;
+  border: none;
+  background: #ebebeb;
+  box-shadow:  inset 6px 8px 12px #c8c8c8,
+  inset -6px -8px 12px #ffffff;
+}
+
+/*Formular---------------------------------------------------------------*/
+.formular{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  padding: 20px;
+  width: 240px;
+  height: 600px;
+  border: none;
+  border-radius: 15px;
+  background: #ebebeb;
+  box-shadow:  22px 35px 52px #c8c8c8,
+       -33px -35px 52px #ffffff;
+}
+
+.formular p{
+  margin-bottom: 50px;
+  font-weight: 300;
+  font-size: 29px;
+  text-align: left;
+  color: rgb(105, 105, 105);
+}
+
+.textfield {
+  width: 200px;
+  height: 40px;
+  border-radius: 40px;
+  padding-left:15px;
+  font-size: 19px;
+  color: rgb(105, 105, 105);
+  border: none;
+  outline: none;
+  background: #ebebeb;
+  box-shadow:  inset 6px 8px 12px #c8c8c8,
+           inset -6px -8px 12px #ffffff;
+}
+
+.textarea {
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
+  padding:15px;
+  font-size: 19px;
+  color: rgb(105, 105, 105);
+  text-align: left;
+  border: none;
+  outline: none;
+  background: #ebebeb;
+  box-shadow:  inset 6px 8px 12px #c8c8c8,
+           inset -6px -8px 12px #ffffff;
+}
+
+/*Knopf---------------------------------------------------------------*/
+.knopf{
+  padding:2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #ebebeb;
+  box-shadow:   4px 4px 6px #c8c8c8,
+   -4px -4px 6px #ffffff;
+  
+}
+
+.knopf :active{
+  box-shadow:   inset 4px 4px 6px #c8c8c8,
+  inset -4px -4px 6px #ffffff;
+  
+}
+
+.ein{
+  padding:2px;
+  margin:6px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ebebeb;
+  box-shadow:   4px 4px 6px #c8c8c8,
+   -4px -4px 6px #ffffff;
+}
+
+/*Klingel---------------------------------------------------------------*/
+.klingel{
+  padding:2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  border: none;
+  background: #ebebeb;
+  box-shadow:   4px 4px 6px #c8c8c8,
+   -4px -4px 6px #ffffff;
+  
+}
+
+.klingel :active{
+  box-shadow:   inset 4px 4px 6px #c8c8c8,
+  inset -4px -4px 6px #ffffff;
+  
+}
+
+.klingelEin{
+  padding:2px;
+  margin:6px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 10%;
+  background: #ebebeb;
+  box-shadow:   4px 4px 6px #c8c8c8,
+   -4px -4px 6px #ffffff;
+}
+
+/*Blauer Punkt---------------------------------------------------------------*/
+.aus{
+  margin: 9px;
+  border: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #00a3d7;
+  box-shadow: inset 6px 6px 12px #008bb7,
+    inset -6px -6px 12px #00bbf7;
+}
