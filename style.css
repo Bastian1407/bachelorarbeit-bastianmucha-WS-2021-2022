@@ -49,7 +49,7 @@ h3{
     font-size: 2rem;
     line-height: 100%;
     margin-bottom: 1rem;
-    color: black;
+    color: rgb(46, 45, 45);
 }
 
 h4{
@@ -68,6 +68,7 @@ h5{
 
 /* Main
 ----------------------------------------------------------------------------------*/
+@media screen and (min-width: 900px) {
 main{
     max-width: 47rem;
     margin-left: 10rem;
@@ -79,9 +80,25 @@ main{
     box-shadow:  11px 11px 20px #dddddd,
              -11px -11px 20px #f9f9f9;
 }
+}
+
+@media screen and (max-width: 900px) {
+    main{
+        max-width: 47rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 2rem;
+        border-radius: 26px;
+        background: #ebebeb;
+        box-shadow:  11px 11px 20px #dddddd,
+                 -11px -11px 20px #f9f9f9;
+    }
+    }
 
 /* Navigation
 ----------------------------------------------------------------------------------*/
+@media screen and (min-width: 900px) {
 .left-nav{
     position: fixed;
     background-color: cadetblue;
@@ -99,6 +116,7 @@ main{
     color: #3b3b3b;
     font-weight: 500;
   }
+}
 
   .code{
       margin-top: 2rem;
@@ -114,3 +132,17 @@ main{
     box-shadow:  inset 11px 11px 20px #dddddd,
     inset -11px -11px 20px #f9f9f9;
   }
+
+@media screen and (max-width: 900px) {
+    .left-nav{
+        background-color: #ebebeb;
+        margin: 0;
+        width: 0;
+        height: 0;
+        padding: 0;
+    }
+    
+      .left-nav ul li a {
+        color: #ebebeb;
+      }
+}
