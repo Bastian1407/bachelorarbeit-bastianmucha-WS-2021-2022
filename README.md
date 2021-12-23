@@ -4,11 +4,11 @@
 
 ### CSS
 
-https://github.com/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022/blob/main/frameworks/gui_elemente.css
+[Framework GUI-Elemente](https://github.com/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022/blob/main/frameworks/gui_elemente.css)
 
 ### JS
 
-https://github.com/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022/blob/main/frameworks/animation.js
+[Framework JS-Animation](https://github.com/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022/blob/main/frameworks/animation.js)
 
 ## Webseite
 
