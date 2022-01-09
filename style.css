@@ -101,9 +101,8 @@ main{
 @media screen and (min-width: 900px) {
 .left-nav{
     position: fixed;
-    background-color: cadetblue;
     margin: 1rem;
-    width: 6rem;
+    width: 7rem;
     height: auto;
     padding: 0.5rem;
     border-radius: 26px;
@@ -115,11 +114,37 @@ main{
   .left-nav ul li a {
     color: #3b3b3b;
     font-weight: 500;
+    text-decoration: none;
   }
+
+  .left-nav a:hover{
+    color: #D66D00;
+  }
+
+}
+.padding-left {
+    padding: 0.5rem;
 }
 
+@media screen and (max-width: 900px) {
+    .left-nav{
+        visibility: hidden;
+        background-color: #ebebeb;
+        margin: 0;
+        width: 0;
+        height: 0;
+        padding: 0;
+    }
+    
+      .left-nav ul li a {
+        color: #ebebeb;
+      }
+}
+
+/* Code
+----------------------------------------------------------------------------------*/
   .code{
-      margin-top: 2rem;
+    margin-top: 2rem;
 	display: block;
 	padding: 12px;
 	max-width: 100%;
@@ -132,17 +157,3 @@ main{
     box-shadow:  inset 11px 11px 20px #dddddd,
     inset -11px -11px 20px #f9f9f9;
   }
-
-@media screen and (max-width: 900px) {
-    .left-nav{
-        background-color: #ebebeb;
-        margin: 0;
-        width: 0;
-        height: 0;
-        padding: 0;
-    }
-    
-      .left-nav ul li a {
-        color: #ebebeb;
-      }
-}
