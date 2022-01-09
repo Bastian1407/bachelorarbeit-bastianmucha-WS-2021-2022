@@ -68,13 +68,6 @@ button {
 }
 
 /*Switch---------------------------------------------------------------*/
-.switch_button {
-    position: relative;
-    left: 30px;
-    top: 0px;
-    z-index: 0;
-    -webkit-appearance: none;
-  }
   .switch_button + label {
     position: relative;
     display: block;
@@ -217,7 +210,7 @@ box-shadow:  22px 35px 52px #c8c8c8,
   height: auto;
 }
 
-.card p{
+.card_titel{
   margin: 15px;
   font-size: 18px;
   font-weight: bold;
@@ -225,7 +218,7 @@ box-shadow:  22px 35px 52px #c8c8c8,
     margin-bottom: 0rem;
 }
 
-.card a{
+.card_untertitel{
   font-size: 18px;
   padding-left: 60px;
   font-size: 15px;
@@ -260,7 +253,7 @@ inset -4px -4px 8px #ffffff;
 transform: translateY(4px);
 }
 
-.flexbox{
+.card_flexbox{
   margin: 1em;
   margin-top: 2rem;
   display: flex;
@@ -286,7 +279,7 @@ transform: translateY(4px);
            inset -6px -8px 12px #ffffff;
 }
 
-.flexbox button{
+.searchbar button{
   margin-left: 5px;
   font-size: 15px;
   padding: 1px;
@@ -393,7 +386,7 @@ box-shadow:  22px 35px 52px #c8c8c8,
   }
 
 /*Progress bar---------------------------------------------------------------*/
-progress {
+.progress_container{
   border: none;
   width: 200px;
   height: 20px;
@@ -404,36 +397,29 @@ progress {
   inset -6px -8px 12px #ffffff;
 }
 
-progress::-webkit-progress-value {
+.progress_bar{
+  height: 20px;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
   background-color: #00a3d7;
   box-shadow: inset 6px 6px 12px #008bb7,
     inset -6px -6px 12px #00bbf7;
 }
 
-progress::-moz-progress-bar {
-  border-radius: 40px;
-  border: none;
-  background: #ebebeb;
-  box-shadow:  inset 6px 8px 12px #c8c8c8,
-  inset -6px -8px 12px #ffffff;
+.progress_text{
+  padding-left:8px;
+   color:#ebebeb;
+   font-size: 15px;
 }
 
-progress::-webkit-progress-value {
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-  background-color: #00a3d7;
-  box-shadow: inset 6px 6px 12px #008bb7,
-    inset -6px -6px 12px #00bbf7;
-}
-
-progress::-webkit-progress-bar {
-  border-radius: 40px;
-  border: none;
-  background: #ebebeb;
-  box-shadow:  inset 6px 8px 12px #c8c8c8,
-  inset -6px -8px 12px #ffffff;
+.progress_button{
+  margin-top: -2.4rem;
+  margin-left: 10.2rem;
+  font-size: 15px;
+  font-weight: 800;
+  color:black;
 }
 
 /*Formular---------------------------------------------------------------*/
@@ -451,7 +437,7 @@ progress::-webkit-progress-bar {
        -33px -35px 52px #ffffff;
 }
 
-.formular p{
+.formular_titel{
   margin-bottom: 50px;
   font-weight: 300;
   font-size: 29px;
@@ -464,6 +450,7 @@ progress::-webkit-progress-bar {
   height: 40px;
   border-radius: 40px;
   padding-left:15px;
+  padding-right:15px;
   font-size: 19px;
   color: rgb(105, 105, 105);
   border: none;
@@ -488,6 +475,10 @@ progress::-webkit-progress-bar {
            inset -6px -8px 12px #ffffff;
 }
 
+.formular .button_neum{
+  margin-right:15px;
+}
+
 /*Knopf---------------------------------------------------------------*/
 .knopf{
   padding:2px;
@@ -502,12 +493,16 @@ progress::-webkit-progress-bar {
 }
 
 .knopf :active{
+  color:#0579a0;
   box-shadow:   inset 4px 4px 6px #c8c8c8,
   inset -4px -4px 6px #ffffff;
   
 }
 
-.ein{
+.knopf_button{
+  font-size: 15px;
+  text-align: center;
+  color:#00a3d7;
   padding:2px;
   margin:6px;
   border: none;
@@ -532,13 +527,16 @@ progress::-webkit-progress-bar {
   
 }
 
-.klingel :active{
+.klingel :active {
+  color:#0579a0;
   box-shadow:   inset 4px 4px 6px #c8c8c8,
   inset -4px -4px 6px #ffffff;
-  
 }
 
-.klingelEin{
+.klingel_button{
+  font-size: 15px;
+  text-align: center;
+  color:#00a3d7;
   padding:2px;
   margin:6px;
   border: none;
@@ -551,7 +549,7 @@ progress::-webkit-progress-bar {
 }
 
 /*Blauer Punkt---------------------------------------------------------------*/
-.aus{
+.dot-blue{
   margin: 9px;
   border: none;
   width: 6px;
@@ -560,4 +558,53 @@ progress::-webkit-progress-bar {
   background-color: #00a3d7;
   box-shadow: inset 6px 6px 12px #008bb7,
     inset -6px -6px 12px #00bbf7;
+}
+
+/*Loader----------------------------------------------------------------------*/
+.loader {
+    padding:2px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: conic-gradient( #ebebeb 0deg, #ebebeb 270deg, #00a3d7 270deg);
+    box-shadow:   inset 1px 1px 2px #c8c8c8,
+    inset -1px -1px 2px #ffffff;
+    animation: spin 0.5s linear infinite;
+}
+
+.loader_knopf {
+  font-size: 15px;
+  text-align: center;
+  color:#00a3d7;
+  padding:3px;
+  margin:9px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ebebeb;
+  box-shadow:   1px 1px 6px #c8c8c8,
+  -1px -1px 6px #c8c8c8;
+  animation: spins 0.5s linear infinite; 
+  }
+
+  .loader_knopf:active {
+    color:#0579a0;
+    box-shadow:   inset 1px 1px 6px #c8c8c8,
+    inset -1px -1px 6px #c8c8c8;
+    animation: paused;
+  }
+
+  .loader:active {
+    animation: paused;
+  }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spins {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
 }
