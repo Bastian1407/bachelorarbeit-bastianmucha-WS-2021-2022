@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neumorphismus</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/gui_elemente.csss">
     <link rel="stylesheet" href="frameworks/gui_elemente.css">
@@ -13,21 +14,22 @@
     <nav class="left-nav">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#neumorphism">Einleitung</a></li>
+          <li><a href="#neumorphism">Neumorphismus</a></li>
           <li><a href="#installation">Installation</a></li>
           <li><a href="#gui-elements">GUI Elemente</a></li>
-          <li><a href="#button">Button</a></li>
-          <li><a href="#circlebutton">Round Button</a></li>
-          <li><a href="#switchbutton">Switch Button</a></li>
-          <li><a href="#radiobutton">Radio Button</a></li>
-          <li><a href="#checkbox">Checkbox</a></li>
-          <li><a href="#card">Card</a></li>
-          <li><a href="#searchbar">Search bar</a></li>
-          <li><a href="#carousel">Carousel</a></li>
-          <li><a href="#progressbar">Progress bar</a></li>
-          <li><a href="#formular">Textfield</a></li>
-          <li><a href="#knopf">Knopf</a></li>
-          <li><a href="#klingel">Klingel</a></li>
+          <li><a class="padding-left" href="#button">Button</a></li>
+          <li><a class="padding-left" href="#circlebutton">Round Button</a></li>
+          <li><a class="padding-left" href="#switchbutton">Switch Button</a></li>
+          <li><a class="padding-left" href="#radiobutton">Radio Button</a></li>
+          <li><a class="padding-left" href="#checkbox">Checkbox</a></li>
+          <li><a class="padding-left" href="#card">Card</a></li>
+          <li><a class="padding-left" href="#searchbar">Search bar</a></li>
+          <li><a class="padding-left" href="#carousel">Carousel</a></li>
+          <li><a class="padding-left" href="#progressbar">Progress bar</a></li>
+          <li><a class="padding-left" href="#formular">Formular</a></li>
+          <li><a class="padding-left" href="#knopf">Knopf</a></li>
+          <li><a class="padding-left" href="#klingel">Klingel</a></li>
+          <li><a class="padding-left" href="#loaders">Loader</a></li>
         </ul>
       </nav>
       <main>
@@ -36,9 +38,11 @@
         <section>
             <h3 id="neumorphism">Neumorphismus</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi. Sed consectetur dignissim dignissim. Donec pretium est sit amet ipsum fringilla feugiat. Aliquam erat volutpat. Maecenas scelerisque, orci sit amet cursus tincidunt, libero nisl eleifend tortor, vitae cursus risus mauris vitae nisi. Cras laoreet ultrices ligula eget tempus. Aenean metus purus, iaculis ut imperdiet eget, sodales et massa. Duis pellentesque nisl vel massa dapibus non lacinia velit volutpat. Maecenas accumsan interdum sodales. In hac habitasse platea dictumst. Pellentesque ornare blandit orci, eget tristique risus convallis ut. Vivamus a sapien neque. Morbi malesuada massa ac sapien luctus vulputate.
+                Der Begriff Neumorphismus, ist ein Zusammenspiel aus den beiden Wörtern ”Neuer“ und ”Skeuomorphismus“, wobei Silben weggelassen und die Wörter dann zusammen gesetzt wurden sind. Dieser Designstil tauchte erstmalig im Jahr 2019 auf und stellt eine Mischung aus Skeumorphismus und Flat Design dar. Das Besondere am neumorphischen Design ist die Ausdrucksweise in einem flachen Design, um Objekte so realistisch wie möglich nachzuahmen. Hierzu wird das Element aus einem einzigen soliden Material zusammen mit dem Hintergrund erstellt. Durch Einprägung bzw. Ausprägung des Materials entsteht eine homogene Benutzeroberfläche, die dennoch durchstrukturiert wirkt. Dadurch, dass Elemente aus dem Material heraus-, aber auch hineingearbeitet werden können, besteht die Möglichkeit, Interaktionen zu gestalten, indem ein Status mit eingeprägtem und den anderen mit ausgeprägtem Element verbunden wird. Durch die Verwendung von Hintergrundfarbe, Elementform, Abstufung, Lichter und Schatten wird das Design in einen 3D-Stil implementiert. Um diesen Stil zu realisieren, steht die Lichtbewegung im Mittelpunkt des Neumorphismus.
             </p>
             <h4 id="installation">Installation</h4>
+            Den folgende Link ins &lt;head> deines HTML Dokuments hinzufügen. <br>
+            Das JavaScript-Element im &lt;head> oder am Ende des &lt;body> einbinden.
             <div class="code">
                 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/neumorphism.css"&gt;
             </div>
@@ -70,7 +74,7 @@
                 <input id="switch" type="checkbox" class="switch_button"><label for="switch">On</label>
                 <div class="code">
         &lt;input id="switch" type="checkbox" class="switch_button">
-        &lt;label for="switch">On&lt;/label>&lt;
+        &lt;label for="switch">On&lt;/label>
                 </div>
             </div>
             <h4 id="radiobutton">Radio Button</h4>
@@ -113,9 +117,9 @@
                 <div>
                     <div class="card">
                         <img src="images/avatar.jpg" alt="card_img">
-                        <p>Bastian Mucha</p>
-                        <a>UI/UX Designer</a>
-                        <div class="flexbox">
+                        <div class="card_titel">Bastian Mucha</div>
+                        <div class="card_untertitel">UI/UX Designer</div>
+                        <div class="card_flexbox">
                             <button class="button_rund">✆</button>  
                             <button class="button_rund">✉</button>
                             <button class="button_rund">✍</button>
@@ -125,9 +129,9 @@
                     <div class="code">
             &lt;div class="card"> <br>
             &lt;img src="images/avatar.jpg" alt="card_img">  <br>
-            &lt;p>Bastian Mucha&lt;/p>  <br>
-            &lt;a>UI/UX Designer&lt;/a>  <br>
-            &lt;div class="flexbox">  <br>
+            &lt;div class="card_titel">Bastian Mucha&lt;/div>  <br>
+            &lt;div class="card_untertitel">UI/UX Designer&lt;/div>  <br>
+            &lt;div class="card_flexbox">  <br>
             &lt;button class="button_rund">☏&lt;/button><br>
             &lt;button class="button_rund">✉&lt;/button><br>
             &lt;button class="button_rund">✍&lt;/button><br>
@@ -138,12 +142,12 @@
                 </div>
                 <h4 id="searchbar">Search bar</h4>
                     <div>
-                    <div class="flexbox">
+                    <div class="searchbar">
                         <input id="searchfield" type="text" class="searchfield" placeholder="Search..">
                         <button class="button_rund">🔍</button> 
                     </div>
                     <div class="code">
-                        &lt;div class="flexbox"><br>  
+                        &lt;div class="searchbar"><br>  
                         &lt;input id="searchfield" type="text" class="searchfield" placeholder="Search.."> <br>
                         &lt;button class="button_rund">🔍&lt;/button><br>
                         &lt;/div>
@@ -154,13 +158,13 @@
                             <div class="carousel"> 
 <div class="slideshow-container">
     <div class="mySlides fade">
-      <img src="images/carousel_1.jpg" style="width:100%">
+      <img src="images/carousel_1.jpg" alt="carousel_img-1" style="width:100%">
     </div>
     <div class="mySlides fade">
-      <img src="images/carousel_2.jpg" style="width:100%">
+      <img src="images/carousel_2.jpg" alt="carousel_img-2" style="width:100%">
     </div>
     <div class="mySlides fade">
-      <img src="images/carousel_3.jpg" style="width:100%">
+      <img src="images/carousel_3.jpg" alt="carousel_img-3" style="width:100%">
     </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -173,6 +177,7 @@
   </div>
                             </div>
                             <div class="code">
+                                &lt;div class="carousel"><br>
                                 &lt;div class="slideshow-container"><br>
                                 &lt;div class="mySlides fade"><br>
                                 &lt;img src="/images/carousel_1.JPG" style="width:100%">
@@ -190,23 +195,31 @@
                                   &lt;span class="dot" onclick="currentSlide(1)">&lt;/span> <br>
                                   &lt;span class="dot" onclick="currentSlide(2)">&lt;/span> <br>
                                   &lt;span class="dot" onclick="currentSlide(3)">&lt;/span> <br>
+                                  &lt;/div><br>
                                   &lt;/div>
                             </div>
                         </div>
                         <h4 id="progressbar">Progress bar</h4>
                         <div>
-                            <div>
-                                <progress min="0" max="100" value="63">
-                              </div>                              
+                        <div class="progress_container">
+                            <div id="myBar" class="progress_bar" style="width:20%">
+                              <div id="demo" class="progress_text">20%</div>
+                              <div class="progress_button" onclick="move()">+</div> 
+                            </div>
+                          </div>   
                                 <div class="code">
-                                    &lt;progress min="0" max="100" value="63">&lt;/progress>
+                                    &lt;div class="progress_container"> <br>
+                                    &lt;div id="myBar" class="progress_bar" style="width:20%"> <br>
+                                    &lt;div id="demo" class="progress_text">20%&lt;/div> <br>
+                                    &lt;div class="progress_button" onclick="move()">+&lt;/div>  <br>
+                                    &lt;/div> <br>
+                                    &lt;/div>
                                 </div>
                         </div>
-
-                        <h4 id="formular">Textfield</h4>
+                        <h4 id="formular">Formular</h4>
                         <div>
                         <div class="formular">
-                                    <p>Formular</p>
+                                    <div class="formular_titel">Formular</div>
                                         <input type="text" id="vname" class="textfield" placeholder="Vorname" required><br><br>
                                         <input type="text" id="name" class="textfield" placeholder="Nachname" required><br><br>
                                         <input type="email" id="email" class="textfield" placeholder="Email" required><br><br>
@@ -215,45 +228,56 @@
                         </div>
                         <div class="code">
                             &lt;div class="formular"><br>
-                            &lt;p>Formular&lt;/p><br>
+                            &lt;div=class="formular_titel">Formular&lt;/div><br>
                             &lt;input type="text" id="vname" class="textfield" placeholder="Vorname" required><br>
                             &lt;input type="text" id="name" class="textfield" placeholder="Nachname" required><br>
                             &lt;input type="email" id="email" class="textfield" placeholder="Email" required><br>
                             &lt;textarea id="textarea" class="textarea" placeholder="Deine Nachricht.." required>&lt;/textarea><br>
-                            &lt;button class="button_neum">Abschicken&lt;/button>
+                            &lt;button class="button_neum">Abschicken&lt;/button><br>
+                            &lt;/div>
                     </div>
                         </div>
                         <h4 id="knopf">Knopf</h4>
                         <div>
                         <div class="knopf">
-                            <div class="ein">
+                            <div class="knopf_button">╋
                             </div>
                         </div>
                         <div class="code">
                             &lt;div class="knopf">
-                            &lt;div class="ein">
-                            &lt;/div>
+                            &lt;div class="knopf_button">╋
+                            &lt;/div> &lt;/div>
                             </div>
                         </div>
                         <h4 id="klingel">Klingel</h4>
                         <div>
                         <div class="klingel">
-                            <div class="klingelEin">
+                            <div class="klingel_button">►
                             </div>
                         </div>
                         <div class="code">
                             &lt;div class="klingel">
-                            &lt;div class="klingelEin">
-                            &lt;/div>
+                            &lt;div class="klingel_button">►
+                            &lt;/div> &lt;/div>
                             </div>
                         </div>
-                    </div>
+                        <h4 id="loaders">Loader</h4>
+                        <div class="loader">
+                            <div class="loader_knopf">✖
+                            </div>
+                        </div>
+                            <div class="code">
+                                &lt;div class="loader">
+                                &lt;div class="loader_knopf">✖
+                                &lt;/div> &lt;/div>
+                                </div>
         </section>  
     </div>
 
     <p>by Bastian Mucha</p>
 
 </main>
-<script src="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/animation.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/animation.jss"></script>
+<script src="frameworks/animation.js"></script>
 </body>
 </html>
