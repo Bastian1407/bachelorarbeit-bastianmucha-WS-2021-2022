@@ -250,6 +250,7 @@ button{
     cursor: pointer;
     text-align: center;
     font-family: arial;
+    font-weight: bold;
     padding: center;
     text-decoration: none;
     outline: none;
@@ -536,7 +537,7 @@ button{
     font-size: 15px;
     text-align: center;
     color:#00a3d7;
-    padding:center;
+    padding:0px;
     margin: 8px;
     border: none;
     width: 24px;
