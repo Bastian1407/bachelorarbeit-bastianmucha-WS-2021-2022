@@ -50,7 +50,6 @@ button{
     width: 40px;
     height: 40px;
     display: inline-block;
-    padding: 7.5px 12.5px;
     font-size: 8px;
     cursor: pointer;
     text-align: center;
@@ -194,7 +193,7 @@ button{
   }
 
 .checkbox:checked+label::before{
-    content: "X";
+    content: "✔";
     color: #000000;
     font-size: 8px;
     cursor: pointer;
@@ -249,8 +248,6 @@ button{
     font-size: 12px;
     cursor: pointer;
     text-align: center;
-    font-family: arial;
-    font-weight: bold;
     padding: center;
     text-decoration: none;
     outline: none;
