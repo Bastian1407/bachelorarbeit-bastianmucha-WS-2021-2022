@@ -1,10 +1,11 @@
 /*Basics---------------------------------------------------------------*/
 html, body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: arial;
     font-size: 20px;
     line-height: 130%;
     font-weight: 300;
     background-color: #ebebeb;
+    font-style: none;
   }
 
 button{
@@ -193,7 +194,8 @@ button{
   }
 
 .checkbox:checked+label::before{
-    content: "✔️";
+    content: "✔︎";
+    color: #000000;
     font-size: 8px;
     cursor: pointer;
     text-align: center;
@@ -246,7 +248,8 @@ button{
     display: inline-block;
     font-size: 12px;
     cursor: pointer;
-    /*text-align: center;*/
+    text-align: center;
+    font-family: arial;
     padding: center;
     text-decoration: none;
     outline: none;
