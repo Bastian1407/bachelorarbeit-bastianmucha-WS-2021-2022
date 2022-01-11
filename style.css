@@ -16,7 +16,8 @@ a{
 }
 
 p{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     max-width: 50rem;
 }
 
@@ -25,16 +26,12 @@ section{
     border-bottom: solid 1px #3b3b3b;
 }
 
-div{
-    margin-bottom: 20px;
-}
-
 /* Headlines
 ----------------------------------------------------------------------------------*/
 h1{
     font-size: 3rem;
     line-height: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     color: black;
     font-weight: 500;
 }
@@ -56,7 +53,7 @@ h4{
     font-size: 1.6rem;
     line-height: 100%;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     color:#D66D00;
 }
 
@@ -68,8 +65,8 @@ h5{
 
 /* Main
 ----------------------------------------------------------------------------------*/
-@media screen and (min-width: 900px) {
-main{
+@media screen and (min-width: 900px){
+    main{
     max-width: 47rem;
     margin-left: 10rem;
     margin-top: 1rem;
@@ -78,28 +75,28 @@ main{
     border-radius: 26px;
     background: #ebebeb;
     box-shadow:  11px 11px 20px #dddddd,
-             -11px -11px 20px #f9f9f9;
-}
+                -11px -11px 20px #f9f9f9;
+    }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px){
     main{
-        max-width: 47rem;
-        margin-left: 1rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding: 2rem;
-        border-radius: 26px;
-        background: #ebebeb;
-        box-shadow:  11px 11px 20px #dddddd,
-                 -11px -11px 20px #f9f9f9;
+    max-width: 47rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border-radius: 26px;
+    background: #ebebeb;
+    box-shadow:  11px 11px 20px #dddddd,
+                -11px -11px 20px #f9f9f9;
     }
-    }
+}
 
 /* Navigation
 ----------------------------------------------------------------------------------*/
-@media screen and (min-width: 900px) {
-.left-nav{
+@media screen and (min-width: 900px){
+    .left-nav{
     position: fixed;
     margin: 1rem;
     width: 7rem;
@@ -107,53 +104,53 @@ main{
     padding: 0.5rem;
     border-radius: 26px;
     background: #ebebeb;
-    box-shadow:  11px 11px 20px #dddddd,
-             -11px -11px 20px #f9f9f9;
-}
+    box-shadow: 11px 11px 20px #dddddd,
+               -11px -11px 20px #f9f9f9;
+    }
 
-  .left-nav ul li a {
+    .left-nav ul li a{
     color: #3b3b3b;
     font-weight: 500;
     text-decoration: none;
-  }
+    }
 
-  .left-nav a:hover{
+    .left-nav a:hover{
     color: #D66D00;
-  }
+    }
 
-}
-.padding-left {
+    .padding-left{
     padding: 0.5rem;
+    }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px){
     .left-nav{
-        visibility: hidden;
-        background-color: #ebebeb;
-        margin: 0;
-        width: 0;
-        height: 0;
-        padding: 0;
+    visibility: hidden;
+    background-color: #ebebeb;
+    margin: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
     }
     
-      .left-nav ul li a {
-        color: #ebebeb;
-      }
+    .left-nav ul li a{
+    color: #ebebeb;
+    }
 }
 
 /* Code
 ----------------------------------------------------------------------------------*/
-  .code{
+.code{
     margin-top: 2rem;
+    margin-bottom: 2rem;
 	display: block;
 	padding: 12px;
 	max-width: 100%;
-	/* height: 300px; */
 	max-height: 200px;
 	overflow: auto;
 	word-wrap: normal;
 	font-family: "Courier Prime";
     border-radius: 10px;
-    box-shadow:  inset 11px 11px 20px #dddddd,
-    inset -11px -11px 20px #f9f9f9;
-  }
+    box-shadow: inset 11px 11px 20px #dddddd,
+                inset -11px -11px 20px #f9f9f9;
+}
