@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neumorphismus</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/framework/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/framework/gui_elemente.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/gui_elemente.csss">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -39,14 +39,14 @@
             <p>
                 Der Begriff Neumorphismus, ist ein Zusammenspiel aus den beiden Wörtern ”Neuer“ und ”Skeuomorphismus“, wobei Silben weggelassen und die Wörter dann zusammen gesetzt wurden sind. Dieser Designstil tauchte erstmalig im Jahr 2019 auf und stellt eine Mischung aus Skeumorphismus und Flat Design dar. Das Besondere am neumorphischen Design ist die Ausdrucksweise in einem flachen Design, um Objekte so realistisch wie möglich nachzuahmen. Hierzu wird das Element aus einem einzigen soliden Material zusammen mit dem Hintergrund erstellt. Durch Einprägung bzw. Ausprägung des Materials entsteht eine homogene Benutzeroberfläche, die dennoch durchstrukturiert wirkt. Dadurch, dass Elemente aus dem Material heraus-, aber auch hineingearbeitet werden können, besteht die Möglichkeit, Interaktionen zu gestalten, indem ein Status mit eingeprägtem und den anderen mit ausgeprägtem Element verbunden wird. Durch die Verwendung von Hintergrundfarbe, Elementform, Abstufung, Lichter und Schatten wird das Design in einen 3D-Stil implementiert. Um diesen Stil zu realisieren, steht die Lichtbewegung im Mittelpunkt des Neumorphismus.
             </p>
-            <h4 id="installation">Installation</h4>
-            Den folgende Link ins &lt;head> deines HTML Dokuments hinzufügen. <br>
-            Das JavaScript-Element im &lt;head> oder am Ende des &lt;body> einbinden.
+            <h3 id="installation">Installation</h3>
+            <p>Den folgenden Link ins &lt;head> deines HTML Dokuments hinzufügen. <br>
+            Das JavaScript-Element im &lt;head> oder am Ende des &lt;body> einbinden.</p>
             <div class="code">
-                &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/framework/gui_elemente.css"&gt;
+                &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/gui_elemente.css"&gt;
             </div>
             <div class="code">
-                &lt;script src="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/framework/animation.js">&lt;/script>
+                &lt;script src="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/animation.js">&lt;/script>
             </div>
             <p>Das Github Repository ist unter folgendem Link zu finden: <a
                 href="https://github.com/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022">https://github.com/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022</a>
@@ -55,29 +55,22 @@
         <section>
             <h3 id="gui-elements">GUI Elemente</h3>
             <h4 id="button">Button</h4>
-            <div>
                 <button class="button_neum">Drück mich</button>
                 <div class="code">
                     &lt;button class="button_neum">Drück mich&lt;/button>
                 </div>
-            </div>
             <h4 id="circlebutton">Round Button</h4>
-            <div>
                 <button class="button_rund">On</button>
                 <div class="code">
                     &lt;button class="button_rund">On&lt;/button>
                 </div>
-            </div>
             <h4 id="switchbutton">Switch Button</h4>
-            <div>
                 <input id="switch" type="checkbox" class="switch_button"><label for="switch">On</label>
                 <div class="code">
         &lt;input id="switch" type="checkbox" class="switch_button">
         &lt;label for="switch">On&lt;/label>
                 </div>
-            </div>
             <h4 id="radiobutton">Radio Button</h4>
-                <div>
                     <div class="radiobutton">
                             <input type="radio" id="contactChoice1"
                              name="contact" value="email" checked>
@@ -102,20 +95,14 @@
                             &lt;label for="contactChoice3">Mail&lt;/label> <br>
                            &lt;/div> 
                         </div>
-                </div>
                 <h4 id="checkbox">Checkbox</h4>
-                    <div>
-                        <div>
                             <input class="checkbox" id="check" type="checkbox"><label for="check">Label</label>
-                        </div>
                         <div class="code">
                             &lt;input class="checkbox" id="check" type="checkbox">&lt;label for="check">Label&lt;/label>
                         </div>
-                    </div>
             <h4 id="card">Card</h4>
-                <div>
                     <div class="card">
-                        <img src="images/avatar.jpg" alt="card_img">
+                        <img src="images/avatar.jpg" style="height:150px" alt="card_img">
                         <div class="card_titel">Bastian Mucha</div>
                         <div class="card_untertitel">UI/UX Designer</div>
                         <div class="card_flexbox">
@@ -138,9 +125,7 @@
             &lt;/div> <br>
             &lt;/div>
                     </div>
-                </div>
                 <h4 id="searchbar">Search bar</h4>
-                    <div>
                     <div class="searchbar">
                         <input id="searchfield" type="text" class="searchfield" placeholder="Search..">
                         <button class="button_rund">🔍</button> 
@@ -151,9 +136,7 @@
                         &lt;button class="button_rund">🔍&lt;/button><br>
                         &lt;/div>
                     </div>
-                        </div>
                         <h4 id="carousel">Carousel</h4>
-                        <div>
                             <div class="carousel"> 
 <div class="slideshow-container">
     <div class="mySlides fade">
@@ -176,47 +159,47 @@
   </div>
                             </div>
                             <div class="code">
-                                &lt;div class="carousel"><br>
-                                &lt;div class="slideshow-container"><br>
-                                &lt;div class="mySlides fade"><br>
-                                &lt;img src="/images/carousel_1.JPG" style="width:100%">
-                                &lt;/div><br>
-                                &lt;div class="mySlides fade"><br>
-                                &lt;img src="/images/carousel_2.JPG" style="width:100%">
-                                &lt;/div><br>
-                                &lt;div class="mySlides fade"><br>
-                                &lt;img src="/images/carousel_5.JPG" style="width:100%">
-                                &lt;/div><br>
+                                &lt;div class="carousel"> <br>
+                                &lt;div class="slideshow-container"> <br>
+                                &lt;div class="mySlides fade"> <br>
+                                &lt;img src="images/carousel_1.jpg" alt="carousel_img-1" style="width:100%"> 
+                                &lt;/div> <br>
+                                &lt;div class="mySlides fade"> <br>
+                                &lt;img src="images/carousel_2.jpg" alt="carousel_img-2" style="width:100%">
+                                &lt;/div> <br>
+                                &lt;div class="mySlides fade"> <br>
+                                &lt;img src="images/carousel_3.jpg" alt="carousel_img-3" style="width:100%">
+                                &lt;/div> <br>
                                 &lt;a class="prev" onclick="plusSlides(-1)">&#10094;&lt;/a> <br>
                                 &lt;a class="next" onclick="plusSlides(1)">&#10095;&lt;/a> <br>
+                                &lt;/div>
+                                &lt;br> <br>
+                                &lt;div style="text-align:center"> <br>
+                                &lt;span class="dot" onclick="currentSlide(1)">&lt;/span> <br>
+                                &lt;span class="dot" onclick="currentSlide(2)">&lt;/span> <br>
+                                &lt;span class="dot" onclick="currentSlide(3)">&lt;/span> <br>
                                 &lt;/div> <br>
-                                  &lt;div style="text-align:center"> <br>
-                                  &lt;span class="dot" onclick="currentSlide(1)">&lt;/span> <br>
-                                  &lt;span class="dot" onclick="currentSlide(2)">&lt;/span> <br>
-                                  &lt;span class="dot" onclick="currentSlide(3)">&lt;/span> <br>
-                                  &lt;/div><br>
-                                  &lt;/div>
-                            </div>
-                        </div>
+                                                                </div>
                         <h4 id="progressbar">Progress bar</h4>
-                        <div>
-                        <div class="progress_container">
-                            <div id="myBar" class="progress_bar" style="width:20%">
-                              <div id="demo" class="progress_text">20%</div>
-                              <div class="progress_button" onclick="move()">+</div> 
-                            </div>
-                          </div>   
+                            <div class="progress_flexbox">
+                                <div class="progress_container"> 
+                                    <div id="myBar" class="progress_bar" style="width:20%"> 
+                                    <div id="demo" class="progress_text">20%</div> 
+                                    </div> 
+                                    </div>
+                                    <div class="progress_button" onclick="move()">+</div> 
+                                </div> 
                                 <div class="code">
+                                    &lt;div class="progress_flexbox"> <br>
                                     &lt;div class="progress_container"> <br>
                                     &lt;div id="myBar" class="progress_bar" style="width:20%"> <br>
                                     &lt;div id="demo" class="progress_text">20%&lt;/div> <br>
-                                    &lt;div class="progress_button" onclick="move()">+&lt;/div>  <br>
                                     &lt;/div> <br>
+                                    &lt;/div> <br>
+                                    &lt;div class="progress_button" onclick="move()">+&lt;/div>  <br>
                                     &lt;/div>
                                 </div>
-                        </div>
                         <h4 id="formular">Formular</h4>
-                        <div>
                         <div class="formular">
                                     <div class="formular_titel">Formular</div>
                                         <input type="text" id="vname" class="textfield" placeholder="Vorname" required><br><br>
@@ -227,17 +210,15 @@
                         </div>
                         <div class="code">
                             &lt;div class="formular"><br>
-                            &lt;div=class="formular_titel">Formular&lt;/div><br>
-                            &lt;input type="text" id="vname" class="textfield" placeholder="Vorname" required><br>
-                            &lt;input type="text" id="name" class="textfield" placeholder="Nachname" required><br>
-                            &lt;input type="email" id="email" class="textfield" placeholder="Email" required><br>
-                            &lt;textarea id="textarea" class="textarea" placeholder="Deine Nachricht.." required>&lt;/textarea><br>
+                            &lt;div class="formular_titel">Formular&lt;/div><br>
+                            &lt;input type="text" id="vname" class="textfield" placeholder="Vorname" required>&lt;br>&lt;br><br>
+                            &lt;input type="text" id="name" class="textfield" placeholder="Nachname" required>&lt;br>&lt;br><br>
+                            &lt;input type="email" id="email" class="textfield" placeholder="Email" required>&lt;br>&lt;br><br>
+                            &lt;textarea id="textarea" class="textarea" placeholder="Deine Nachricht.." required>&lt;/textarea>&lt;br>&lt;br><br>
                             &lt;button class="button_neum">Abschicken&lt;/button><br>
                             &lt;/div>
                     </div>
-                        </div>
                         <h4 id="knopf">Knopf</h4>
-                        <div>
                         <div class="knopf">
                             <div class="knopf_button">╋
                             </div>
@@ -247,19 +228,15 @@
                             &lt;div class="knopf_button">╋
                             &lt;/div> &lt;/div>
                             </div>
-                        </div>
                         <h4 id="klingel">Klingel</h4>
-                        <div>
                         <div class="klingel">
                             <div class="klingel_button">►
                             </div>
                         </div>
                         <div class="code">
                             &lt;div class="klingel">
-                            &lt;div class="klingel_button">►
-                            &lt;/div> &lt;/div>
+                            &lt;div class="klingel_button">►&lt;/div> &lt;/div>
                             </div>
-                        </div>
                         <h4 id="loaders">Loader</h4>
                         <div class="loader">
                             <div class="loader_knopf">✖
@@ -272,10 +249,8 @@
                                 </div>
         </section>  
     </div>
-
     <p>by Bastian Mucha</p>
-
 </main>
-<script src="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/framework/animation.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/animation.js"></script>
 </body>
 </html>
