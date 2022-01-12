@@ -21,7 +21,18 @@ Dieses CSS-Framework wurde in den folgenden Browsern getestet:
 - Edge (97)
 - Chrome (97)
 
-| Browser | Safari (15) | Firefox (95) | Edge (97)| Chrome (97)|
+|  | Safari (15) | Firefox (95) | Edge (97)| Chrome (97)|
 |:------------------ |:------------------:| ------------------:|  ------------------:|  ------------------:|
-| Gui Element ||  |  |  |
-| | ✔ | ✔ | ✔ | ✔ |
+| Button | ✔ | ✔ | ✔ | ✔ |
+| Round Button | ✔ | ✔ | ✔ | ✔ |
+| Switch Button | ✔ | ✔ | ✔ | ✔ |
+| Radio Button | ✔ | ✔ | ✔ | ✔ |
+| Checkbox | ✔ | ✔ | ✔ | ✔ |
+| Card | ✔ | ✔ | ✔ | ✔ |
+| Search bar | ✔ | ✔ | ✔ | ✔ |
+| Carousel | ✔ | ✔ | ✔ | ✔ |
+| Progress bar | ✔ | ✔ | ✔ | ✔ |
+| Formular | ✔ | ✖ | ✔ | ✔ |
+| Knopf | ✔ | ✔ | ✔ | ✔ |
+| Klingel | ✔ | ✔ | ✔ | ✔ |
+| Loader | ✔ | ✔ | ✔ | ✔ |
