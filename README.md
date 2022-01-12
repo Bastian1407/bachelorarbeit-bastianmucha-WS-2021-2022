@@ -16,12 +16,12 @@ Die Webseite ist unter der URL https://bastian1407.github.io/bachelorarbeit-bast
 
 ## Browser Kompatibilität
 Dieses CSS-Framework wurde in den folgenden Browsern getestet:
-- Safari
-- Firefox
-- Edge
-- Chrome
+- Safari (15)
+- Firefox (95)
+- Edge (97)
+- Chrome (97)
 
 | Browser | Safari (15) | Firefox (95) | Edge (97)| Chrome (97)|
-| ------------------ | ------------------ |
-| Gui Element || ✔ | ✔ | ✔ ||
-| || ✔ | ✔ | ✔ | ✔ |
+|:------------------ |:------------------:| ------------------:|  ------------------:|  ------------------:|
+| Gui Element ||  |  |  |
+| | ✔ | ✔ | ✔ | ✔ |
