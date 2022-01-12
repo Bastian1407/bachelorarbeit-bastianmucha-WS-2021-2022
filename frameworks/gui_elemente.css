@@ -602,7 +602,7 @@ button{
 
 /*Loader----------------------------------------------------------------------*/
 .loader{
-    padding:2px;
+    padding:3px;
     width: 48px;
     height: 48px;
     border-radius: 50%;
