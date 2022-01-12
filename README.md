@@ -2,14 +2,14 @@
 
 ## Installation
 
-Den folgenden Link ins  \<head \> deines HTML Dokuments hinzufügen. 
+Den folgenden Link ins  \<head\> deines HTML Dokuments hinzufügen. 
   
-   \<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/gui_elemente.css" \>
+  ``` <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/gui_elemente.css"> ```
   
   
-Das JavaScript-Element im  \<head \> oder am Ende des  \<body \> einbinden.
+Das JavaScript-Element im  \<head\> oder am Ende des  \<body\> einbinden.
 
- \<script src="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/animation.js" \> \</script \>
+``` <script src="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/animation.js"></script> ```
 
 ### Download CSS
 
