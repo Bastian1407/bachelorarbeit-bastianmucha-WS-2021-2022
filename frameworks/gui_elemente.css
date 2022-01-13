@@ -135,6 +135,7 @@ button{
   }
 
 .radiobutton input{
+    cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -159,6 +160,7 @@ button{
   }
 
 .radiobutton label{
+    cursor: pointer;
     margin-top: -1rem;
     padding-left:35px; 
 }
@@ -166,6 +168,7 @@ button{
 /*Checkbox---------------------------------------------------------------*/
 .checkbox + label{
     position: absolute;
+    cursor: pointer;
   }
 
 .checkbox{
@@ -286,7 +289,7 @@ button{
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 19px;
-    cursor: pointer;
+    cursor: text;
     text-align: left;
     text-decoration: none;
     outline: none;
@@ -439,6 +442,7 @@ button{
   }
 
 .progress_button{
+    cursor: pointer;
     padding: 1px;
     font-size: 15px;
     font-weight: 800;
@@ -531,6 +535,7 @@ button{
   }
 
 .knopf_button{
+    cursor: pointer;
     font-size: 15px;
     text-align: center;
     color:#00a3d7;
@@ -569,6 +574,7 @@ button{
   }
 
 .klingel_button{
+    cursor: pointer;
     font-size: 15px;
     text-align: center;
     color:#00a3d7;
@@ -613,6 +619,7 @@ button{
   }
 
 .loader_knopf{
+    cursor: pointer;
     font-family:arial;
     font-size: 15px;
     text-align: center;
