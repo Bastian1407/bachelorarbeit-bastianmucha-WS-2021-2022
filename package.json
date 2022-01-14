@@ -1,0 +1,26 @@
+{
+  "name": "bachelorarbeit-bastianmucha-ws-2021-2022",
+  "version": "1.0.0",
+  "description": "Framework zum Einbinden von neumorphischen GUI Elementen",
+  "main": "frameworks/gui_elemente.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022.git"
+  },
+  "keywords": [
+    "framework",
+    "gui",
+    "css",
+    "neumorphismus",
+    "neumorphism"
+  ],
+  "author": "Bastian Mucha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022/issues"
+  },
+  "homepage": "https://github.com/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022#readme"
+}
