@@ -2,6 +2,13 @@
 
 ## Installation
 
+### NPM
+
+``` npm install @bastian1407/bachelorarbeit-bastianmucha-ws-2021-2022@1.0.2 ```
+
+
+### Stylesheet-Link via CDN
+
 Den folgenden Link ins  \<head\> deines HTML Dokuments hinzufügen. 
   
   ``` <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bastian1407/bachelorarbeit-bastianmucha-WS-2021-2022@main/frameworks/gui_elemente.css"> ```
