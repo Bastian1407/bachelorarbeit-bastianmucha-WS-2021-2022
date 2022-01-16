@@ -1,0 +1,663 @@
+/*Basics---------------------------------------------------------------*/
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 300;
+    background-color: #ebebeb;
+    font-style: none;
+  }
+
+button{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+  }
+ 
+/*Button---------------------------------------------------------------*/
+.button_neum{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #00a3d7;
+    border: none;
+    border-radius: 15px;
+    background: #ebebeb;
+    box-shadow: 11px 11px 20px #c8c8c8,
+               -11px -11px 20px #ffffff;
+  }
+
+.button_neum:hover{
+    background-color: #f0ecec;
+    color: #00a1d7d7;
+  }
+
+.button_neum:active{
+    color:#0579a0;
+    background-color: #ebebeb;
+    box-shadow: inset 11px 11px 20px #c8c8c8,
+                inset -11px -11px 20px #ffffff;
+    transform: translateY(4px);
+  }
+
+.button_rund{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #00a3d7;
+    border-radius: 50px;
+    background: #ebebeb;
+    box-shadow: 4px 4px 8px #c8c8c8,
+               -4px -4px 8px #ffffff;
+  }
+
+.button_rund:hover{
+    background-color: #f0ecec;
+    color: #00a1d7d7;
+  }
+
+.button_rund:active{
+    color: #0579a0;;
+    background-color: #ebebeb;
+    box-shadow: inset 4px 4px 8px #c8c8c8,
+                inset -4px -4px 8px #ffffff;
+    transform: translateY(4px);
+  }
+
+/*Switch---------------------------------------------------------------*/
+.switch_button + label{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    font-family: arial;
+    font-size: 24px;
+    line-height: 1.3;
+    padding-left:70px;
+    position: relative;
+    margin-top: -30px;
+  }
+
+.switch_button + label:before{
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    background: #ebebeb;
+    content: "";
+    margin-right: 15px;
+    transition: background-color 0.5s linear;
+    z-index: 5;
+    position: absolute;
+    left: 0px;
+    border: none;
+    box-shadow: inset 3px 6px 12px #c8c8c8,
+                inset -3px -6px 12px #ffffff;
+  }
+
+.switch_button + label:after{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    content: "";
+    transition: margin 0.1s linear;
+    box-shadow: 4px 4px 8px  #aaaaaa;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: 10;
+  }
+
+.switch_button:checked + label:before{
+    background-color: #00a3d7;
+    box-shadow: inset 3px 3px 12px #008bb7,
+                inset -3px -3px 12px #00bbf7;
+  }
+
+.switch_button:checked + label:after{
+    margin: 0 0 0 30px;
+  }
+
+/*Radiobutton---------------------------------------------------------------*/
+.radiobutton{
+    display: flex;
+    flex-direction:column;
+  }
+
+.radiobutton input{
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: #ebebeb;
+    box-shadow: 2px 2px 4px #c8c8c8,
+               -2px -2px 4px #ffffff;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+  }
+
+.radiobutton input:checked{
+    border: none;
+    background: #ebebeb;
+    box-shadow: inset 2px 2px 4px #c8c8c8,
+                inset -2px -2px 4px #ffffff;
+  }
+
+.radiobutton label{
+    cursor: pointer;
+    margin-top: -1rem;
+    padding-left:35px; 
+}
+
+/*Checkbox---------------------------------------------------------------*/
+.checkbox + label{
+    position: absolute;
+    cursor: pointer;
+  }
+
+.checkbox{
+    position: relative;
+    left: 15px;
+    top: -4px;
+    z-index: 0;
+    -webkit-appearance: none;
+  }
+
+.checkbox + label::before{
+    width: 22px;
+    height: 18px;
+    border: none;
+    border-radius: 4px;
+    background: #ebebeb;
+    box-shadow: inset 2px 2px 4px #c8c8c8,
+                inset -2px -2px 4px #ffffff;
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 15px;
+    z-index: 5;
+    position: relative;
+  }
+
+.checkbox:checked+label::before{
+    content: "✔";
+    color: #000000;
+    font-size: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    padding-bottom: 1px;
+    text-shadow: 0.4px 0.8px 1px #000000,
+                -0.4px -0.8px 1px #c7c7c7;
+  }
+
+/*Card---------------------------------------------------------------*/
+.card{
+    margin-left: 2rem;;
+    width: 220px;
+    height: 350px;
+    border: none;
+    border-radius: 15px;
+    background: #ebebeb;
+    box-shadow: 22px 35px 52px #c8c8c8,
+               -33px -35px 52px #ffffff;
+  }
+
+.card img{
+    padding: 20px 35px;
+    padding-bottom: 0px;;
+    width: 150px;
+    height: 150px; 
+  }
+
+.card_titel{
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+
+.card_untertitel{
+    font-size: 18px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+    color:#000000;
+  }
+
+.card button{
+    margin:auto;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    padding: center;
+    text-decoration: none;
+    outline: none;
+    color: #00a3d7;
+    border-radius: 50px;
+    background: #ebebeb;
+    box-shadow: 4px 4px 8px #c8c8c8,
+               -4px -4px 8px #ffffff;
+  }
+  
+.card button:hover{
+    background-color: #ebebeb;
+    color: #00a1d7d7;
+  }
+
+.card button:active{
+    color: #0579a0;;
+    background-color: #ebebeb;
+    box-shadow: inset 4px 4px 8px #c8c8c8,
+                inset -4px -4px 8px #ffffff;
+    transform: translateY(4px);
+  }
+
+.card_flexbox{
+    margin: 1em;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+/*Search bar---------------------------------------------------------------*/
+.searchfield{
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 19px;
+    cursor: text;
+    text-align: left;
+    text-decoration: none;
+    outline: none;
+    color: #696969;
+    border: none;
+    background: #ebebeb;
+    box-shadow: inset 6px 8px 12px #c8c8c8,
+                inset -6px -8px 12px #ffffff;
+  }
+
+.searchbar button{
+    color: #00a3d7;
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 1px;
+  }
+
+/*Carousel---------------------------------------------------------------*/
+.carousel{
+    margin-left: 2rem;
+    width: 490px;
+    height: 340px;
+    border: none;
+    padding-top: 40px;
+    border-radius: 15px;
+    background: #ebebeb;
+    box-shadow: 22px 35px 52px #c8c8c8,
+               -33px -35px 52px #ffffff;
+  }
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 2rem;;
+    width: 350px;
+    height: 220px;
+  }
+
+.carousel img{
+    width: 150px;
+    height: 270px;
+  }
+  
+.mySlides{
+    display: none;
+  }
+  
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    margin-left: -54px;
+    margin-right: -54px;
+    color: #00a3d7;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border: none;
+    background: #ebebeb;
+    box-shadow: 2px 2px 4px #c8c8c8,
+               -2px -2px 4px #ffffff;
+  }
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+.prev:hover, .next:hover{
+    background-color: #ebebeb;
+    color: #0ca6dad7;
+  }
+
+.prev:active, .next:active{
+    color:#0579a0;
+    background-color: #ebebeb;
+    box-shadow: inset 2px 2px 4px #c8c8c8,
+                inset -2px -2px 4px #ffffff;
+  }
+  
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: none;
+    background: #ebebeb;
+    box-shadow:   2px 2px 4px #c8c8c8,
+                 -2px -2px 4px #ffffff;
+  }
+  
+.active{
+    box-shadow: inset 2px 2px 4px #c8c8c8,
+                inset -2px -2px 4px #ffffff;
+  }
+  
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@-webkit-keyframes fade{
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+@keyframes fade{
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/*Progress bar---------------------------------------------------------------*/
+.progress_container{
+    border: none;
+    width: 200px;
+    height: 20px;
+    border-radius: 40px;
+    border: none;
+    background: #ebebeb;
+    box-shadow:  inset 6px 8px 12px #c8c8c8,
+                 inset -6px -8px 12px #ffffff;
+  }
+
+.progress_bar{
+    height: 20px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #00a3d7;
+    box-shadow: inset 6px 6px 12px #008bb7,
+                inset -6px -6px 12px #00bbf7;
+  }
+
+.progress_text{
+    padding-left:8px;
+    color:#ebebeb;
+    font-size: 15px;
+  }
+
+.progress_button{
+    cursor: pointer;
+    padding: 1px;
+    font-size: 15px;
+    font-weight: 800;
+    color:black;
+  }
+
+.progress_button:hover{
+    font-size: 18px;
+  }
+
+.progress_flexbox{
+    display: flex;
+    flex-direction: row;
+  }
+
+/*Formular---------------------------------------------------------------*/
+.formular{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    padding: 20px;
+    width: 240px;
+    height: 600px;
+    border: none;
+    border-radius: 15px;
+    background: #ebebeb;
+    box-shadow:  22px 35px 52px #c8c8c8,
+                -33px -35px 52px #ffffff;
+  }
+
+.formular_titel{
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 29px;
+    text-align: left;
+    color: #696969;
+  }
+
+.textfield{
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    padding-left:15px;
+    padding-right:15px;
+    font-size: 19px;
+    color: #696969;
+    border: none;
+    outline: none;
+    background: #ebebeb;
+    box-shadow:  inset 6px 8px 12px #c8c8c8,
+                 inset -6px -8px 12px #ffffff;
+  }
+
+.textarea{
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    padding:15px;
+    font-size: 19px;
+    color: #696969;
+    text-align: left;
+    resize: none;
+    border: none;
+    outline: none;
+    background: #ebebeb;
+    box-shadow:  inset 6px 8px 12px #c8c8c8,
+                 inset -6px -8px 12px #ffffff;
+  }
+
+.formular .button_neum{
+    margin-right:10px;
+  }
+
+/*Knopf---------------------------------------------------------------*/
+.knopf{
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #ebebeb;
+    box-shadow: 4px 4px 6px #c8c8c8,
+               -4px -4px 6px #ffffff;
+  }
+
+.knopf_button:active{
+    color:#0579a0;
+    box-shadow: inset 4px 4px 6px #c8c8c8,
+                inset -4px -4px 6px #ffffff; 
+  }
+
+.knopf_button{
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    color:#00a3d7;
+    padding:0px;
+    margin: 8px;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ebebeb;
+    box-shadow: 4px 4px 6px #c8c8c8,
+               -4px -4px 6px #ffffff;
+  }
+
+.knopf_button:hover{
+    background-color: #f0ecec;
+    color: #00a1d7d7;
+  }
+
+/*Klingel---------------------------------------------------------------*/
+.klingel{
+    padding:2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    border: none;
+    background: #ebebeb;
+    box-shadow: 4px 4px 6px #c8c8c8,
+               -4px -4px 6px #ffffff; 
+  }
+
+.klingel :active{
+    color:#0579a0;
+    box-shadow: inset 4px 4px 6px #c8c8c8,
+                inset -4px -4px 6px #ffffff;
+  }
+
+.klingel_button{
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    color:#00a3d7;
+    padding:2px;
+    margin:6px;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 10%;
+    background: #ebebeb;
+    box-shadow: 4px 4px 6px #c8c8c8,
+               -4px -4px 6px #ffffff;
+  }
+
+.klingel_button:hover{
+    background-color: #f0ecec;
+    color: #00a1d7d7;
+  }
+
+/*Blauer Punkt---------------------------------------------------------------*/
+.dot-blue{
+    margin: 9px;
+    border: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #00a3d7;
+    box-shadow: inset 6px 6px 12px #008bb7,
+                inset -6px -6px 12px #00bbf7;
+  }
+
+/*Loader----------------------------------------------------------------------*/
+.loader{
+    padding:3px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: conic-gradient( #ebebeb 0deg, #ebebeb 270deg, #00a3d7 270deg);
+    box-shadow: inset 1px 1px 2px #c8c8c8,
+                inset -1px -1px 2px #ffffff;
+    animation: spin 0.5s linear infinite;
+  }
+
+.loader_knopf{
+    cursor: pointer;
+    font-family:arial;
+    font-size: 15px;
+    text-align: center;
+    color:#00a3d7;
+    padding:3px;
+    margin:9px;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ebebeb;
+    box-shadow: 1px 1px 6px #c8c8c8,
+               -1px -1px 6px #c8c8c8;
+    animation: spins 0.5s linear infinite; 
+  }
+
+.loader_knopf:active{
+    color:#0579a0;
+    box-shadow: inset 1px 1px 6px #c8c8c8,
+                inset -1px -1px 6px #c8c8c8;
+    animation: paused;
+  }
+
+.loader_knopf:hover{
+    background-color: #f0ecec;
+    color: #00a1d7d7;
+  }
+
+.loader:active{
+    animation: paused;
+  }
+
+@keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+@keyframes spins{
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+  }
