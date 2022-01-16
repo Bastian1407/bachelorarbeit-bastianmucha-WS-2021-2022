@@ -1,6 +1,6 @@
 {
   "name": "@bastian1407/bachelorarbeit-bastianmucha-ws-2021-2022",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Framework zum Einbinden von neumorphischen GUI Elementen",
   "main": "gui_elemente.css",
   "scripts": {
